@@ -1,3 +1,7 @@
+## Note to reviewer
+
+- Encountered issues with scoping and the API trying to get information such as a short paragraph and a url to work. Will need to revisist
+
 # News Summary challenge
 
 * Challenge time: rest of the day and weekend, until Monday 9am.

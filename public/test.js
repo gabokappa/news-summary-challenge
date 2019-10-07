@@ -13,7 +13,6 @@ request.onload = function () {
     var data = JSON.parse(this.response);
 
     // console.log(data.response.results);
-
       data.response.results.forEach(article => {
         var card = document.createElement('div');
         card.setAttribute('class', 'card');
@@ -22,9 +21,16 @@ request.onload = function () {
         h2.textContent = article.webTitle;
         // h2.insertAdjacentHTML('afterbegin', `<a href=${article.webUrl}>`);
         // h2.insertAdjacentHTML('beforeend', '</a>');
+let articles = new Articles();
+        ;
+  var p = document.createElement('p');
+  p.textContent = `${articles.getArticle(article.id)}`;
+
+
 
       container.appendChild(card);
       card.appendChild(h2);
+      card.appendChild(p);
       });
   };
     // document.getElementById('app').innerHTML =
